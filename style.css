@@ -1,70 +1,77 @@
 body{
-    margin: 0;
-    font-family: Audiowide;
+    margin: 0px;
 }
-header img{
-    height: 300px;
+html{
+    scroll-behavior: smooth;
 }
 header{
     text-align: center;
-    box-shadow: 5px 5px 0px 0px rgb(144, 193, 216);
-    background-color: rgb(29, 106, 129);
+    background-color: rgb(131, 24, 18);
+    box-shadow: 5px 4px 5px -2px chocolate;
     position: fixed;
-    width: ;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
     height: 50px;
 }
-nav{
-    margin-top: 10px;
+.banner{
+    padding: 10px;
+    font-size: 23px;
+    text-align: center;
+    colo
 }
-nav a{
-    text-decoration: none;
-    color: rgb(233, 216, 216);
-    padding: 5px 15px;
-    font-size: 18px;
-    background-color: rgb(27, 92, 136);
-    text-align:center;
-    height: 30px;
-    border-radius: 10px 10px 10px 10px;
-}
-nav a:hover{
-    color: rgb(213, 227, 235);
-    background-color: rgb(19, 89, 136);
-    border-radius: 10px 10px 10px 10px;
-    box-shadow: 5px 5px 0px 0px rgb(185, 224, 241);
-    transition: 0.5s;
-    height: 30px;
-}
-.home{
-    background-image: url("tuakberas.png");
+section.home{
     height: 800px;
     background-size: cover;
-    padding-top: 50px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url(tuakberas.png);
 }
-.deskripsiHome{
+section.project{
+    height: 800px;
+    text-align: center;
+    color: rgb(108, 82, 49);
+}
+section.howto{
+    height: 640px;
+    padding-top: 100px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.howto img{
+    height: 500px;
+}
+.deskHowto{
+    display: flex;
+    width: 60%;
+    margin: auto;
+}
+.dokumentasi{
+    margin: 200px;
+}
+section.profile{
+    height: 800px;
+    text-align: center;
+}
+.kotakBiotek{
     width: 40%;
-    font-size: 20px;
     margin-left: 50px;
-    & h1{
-        color: rgb(211, 214, 182);
+    padding-top: 100px;
 }
-& h3{
+.namaBiotek{
     color: aliceblue;
+    font size: 50px;
 }
-& p{
-.deskripsiHome a{
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    background-color: rgb(255, 255, 255);
-    background: #f5ebab;
-    background: linear-gradient(90deg, rgba(245, 235, 171, 1)
-    0%, rgba(255, 241, 201, 1)
-    50%, rgba(255, 255, 255, 1) 100%);
-    padding: 10px 30px;
-    border-radius: 30px;
-    box-shadow: 3px 3px 5px -2px rgb(188, 200, 223);
-    border:2px rgb(157, 186, 240) solid;
+.deskBiotek{
+    color: rgb(187, 70, 70);
+    font-size: 20px;
 }
-.deskripsiHome a:{
-    box-shadow: 5px 5px 10px -2px cornflowerblue;
-    padding: 11px 31px;
+section.project img{
+    height: 300-px;
+}
+.deskProject{
+    width: 100%;
+    margin: 20px;
+    padding: 20px 50px;
 }
