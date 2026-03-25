@@ -4,21 +4,47 @@ body{
 html{
     scroll-behavior: smooth;
 }
+header img{
+    height: 100px;
+}
 header{
     text-align: center;
-    background-color: rgb(131, 24, 18);
-    box-shadow: 5px 4px 5px -2px chocolate;
-    position: fixed;
-    width: 100%;
     display: flex;
     justify-content: space-between;
-    height: 50px;
-}
-.banner{
+    height: 40px;
+    position: fixed;
+    width: 100%;
+    background-color: rgb(253, 253, 201);
+    color: bisque;
     padding: 10px;
-    font-size: 23px;
+}
+nav{
+    margin-top: 10px;
+    margin-left: 33%;
+    justify-content: space-between;
+}
+nav a{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(215, 195, 116);
+    border-radius: 20px 15px 20px 15px;
+    padding: 5px 25px;
+    color: rgb(75, 70, 54);
+    text-decoration: none;
+    border-radius: 20px 15px 20px 15px;
+    transition: 1s;
+    font-size: 16px;
+    justify-content: space-between;
     text-align: center;
-    colo
+}
+nav a:hover{
+    color: rgb(74, 66, 56);
+    background-color: rgb(236, 226, 166);
+    border-radius: 20px 15px 20px 15px;
+    box-shadow: 5px 5px 5px -2px chocolate;
+    padding: 7px 20px;
+    transition: 0.5s;
+    text-align: center;
+    justify-content: space-between;
 }
 section.home{
     height: 800px;
@@ -27,51 +53,87 @@ section.home{
     background-attachment: fixed;
     background-image: url(tuakberas.png);
 }
-section.project{
-    height: 800px;
+.containerHome{
+    width: 40%;
+    margin-left: 50px;
+    padding-top: 100px;
+    color: rgb(196, 75, 14);
+}
+h1.judulhome{
+    font-size: 50px;
+}
+.deskripsiHome{
+    color: rgb(229, 255, 0);
+    font-size: 25px;
+    margin-top: 25px;
+}
+section.about img{
+    height: 500px;
     text-align: center;
-    color: rgb(108, 82, 49);
+}
+.containerAbout{
+    text-align: center;
+    background-color: rgb(235, 225, 180);
+    justify-content: space-between;
+    width: 60%;
+    margin: auto;
+    padding: 50px;
+    &  img{
+        height: 100px;
+    }
 }
 section.howto{
-    height: 640px;
+    background-color: rgb(239, 199, 150);
+    height: 700x;
     padding-top: 100px;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
+    text-align: center;
 }
 .howto img{
-    height: 500px;
+    height: 450px;
 }
 .deskHowto{
     display: flex;
-    width: 60%;
+    width: 100%;
     margin: auto;
+    margin-right: 500px;
+    margin-top: -5px;
 }
 .dokumentasi{
-    margin: 200px;
+    margin: 100px;
+    width: 60%;
+    height: 450px;
+    margin-top: 30px;
+    margin-right: 20px;
 }
 section.profile{
     height: 800px;
     text-align: center;
 }
-.kotakBiotek{
-    width: 40%;
-    margin-left: 50px;
-    padding-top: 100px;
+.cardProfile{
+    background-color: rgb(223, 184, 142);
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    text-align: center;
 }
-.namaBiotek{
-    color: aliceblue;
-    font size: 50px;
+.imgProfile img{
+    width: 75%;
+    padding: 20px;
+    height: 400px;
 }
-.deskBiotek{
-    color: rgb(187, 70, 70);
-    font-size: 20px;
-}
-section.project img{
-    height: 300-px;
-}
-.deskProject{
+.medsos{
+    left: 0;
+    bottom: 0;
     width: 100%;
-    margin: 20px;
-    padding: 20px 50px;
+    text-align: center;
+    height: 40px;
+    padding-top: 5px;
+}
+.medsos a{
+    text-decoration: none;
+    padding: 10px 10px;
+    font-size: 24px;
 }
