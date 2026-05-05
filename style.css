@@ -1,154 +1,50 @@
 body{
-    margin: 0px;
-    background-image:linear-gradient(359deg,
-    rgba(255, 162, 99, 1) 0%,rgba(255, 
-    237, 176, 1) 100%, rgba(245, 181, 181, 
-    1) 22%);
+    margin: 0;
 }
-html{
-    scroll-behavior: smooth;
-}
-header img{
-    height: 100px;
-}
-header{
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    height: 40px;
-    position: fixed;
+.container{
+    background-image: url(furab.avif);
+    height: 600px;
     width: 100%;
-    background-image: linear-gradient(153deg, 
-    rgba(186, 16, 4, 1) 0%, rgba(255, 
-    191, 82, 1) 52%, rgba(250, 230, 82, 
-    1) 100%);
-    color: bisque;
-    padding: 10px;
 }
-nav{
-    margin-top: 10px;
-    margin-left: 33%;
-    justify-content: space-between;
-    
+.container div{
+    position: absolute;
+    font-size: 100px;
 }
-nav a{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: #eb7b1a;
-    border-radius: 20px 15px 20px 15px;
-    padding: 5px 25px;
-    color: rgb(53, 48, 36);
-    text-decoration: none;
-    border-radius: 20px 15px 20px 15px;
-    transition: 1s;
-    font-size: 16px;
-    justify-content: space-between;
-    text-align: center;
+.container div:nth-child(1){
+    left: 5%;
+    animation: animasi 2s infinite linear;
 }
-nav a:hover{
-    color: rgb(40, 35, 29);
-    background-color: #ffcc00;
-    border-radius: 20px 15px 20px 15px;
-    box-shadow: 5px 5px 5px -2px chocolate;
-    padding: 7px 20px;
-    transition: 0.5s;
-    text-align: center;
-    justify-content: space-between;
+.container div:nth-child(2){
+    left: 50%;
+    animation: animasi 4s infinite linear;
 }
-section.home{
-    height: 800px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-image: url(tuakberas.png);
-    padding-top: 50px;
+.container div:nth-child(3){
+    left: 20%;
+    animation: animasi 2s infinite linear;
 }
-.containerHome{
-    width: 40%;
-    margin-left: 100px;
-    padding-top: 100px;
-    color: rgb(255, 239, 237);
+.container div:nth-child(4){
+    left: 30%;
+    animation: animasi 5s infinite linear;
 }
-h1.judulhome{
-    font-size: 50px;
+.container div:nth-child(5){
+    left: 40%;
+    animation: animasi 3s infinite linear;
 }
-.deskripsiHome{
-    color: rgb(193, 0, 0);
-    font-size: 25px;
-    margin-top: 5px;
-    padding-left: 50px;
-    margin-left: -50px;
+.container div:nth-child(6){
+    left: 80%;
+    animation: animasi 5s infinite linear;
 }
-section.about img{
-    height: 500px;
-    text-align: center;
-    border-radius: 30px 15px 30px 15px;
+.container div:nth-child(7){
+    left: 70%;
+    animation: animasi 5s infinite linear;
 }
-.containerAbout{
-    text-align: center;
-    background-color:#FF9966;
-    justify-content: space-between;
-    width: 60%;
-    margin: auto;
-    padding: 50px;
-    &  img{
-        height: 100px;
+
+@keyframes animasi {
+    0%{
+        transform: translateY(0px) scale(50%) rotate(20%);
     }
-}
-section.howto{
-    background-color: rgb(217, 70, 70);
-    height: 700x;
-    padding-top: 100px;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-align: center;
-}
-.howto img{
-    height: 450px;
-}
-.deskHowto{
-    display: flex;
-    width: 100%;
-    margin-right: 500px;
-    margin-top: -5px;
-    margin-left: 50px;
-}
-.dokumentasi{
-    margin: 100px;
-    width: 60%;
-    height: 450px;
-    margin-top: 30px;
-    margin-right: 20px;
-}
-section.profile{
-    height: 800px;
-    text-align: center;
-    color: black;
-}
-.cardProfile{
-    background-color: rgb(255, 214, 169);
-    padding: 15px;
-    width: 500px;
-    margin: auto;
-    text-align: center;
-    border-radius: 20px 20px 20px 20px;
-    margin-top: 180px;
-}
-.imgProfile img{
-    width: 75%;
-    padding: 20px;
-    height: 400px;
-}
-.medsos{
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    height: 40px;
-    padding-top: 5px;
-}
-.medsos a{
-    text-decoration: none;
-    padding: 10px 10px;
-    font-size: 24px;
+    100%{
+        transform: translateY(500px)
+
+    }
 }
